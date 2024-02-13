@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <div
       className={cn(
-        "z-50 bg-[#295aec] fixed top-0 flex items-center w-full p-3 px-6",
+        "z-50 bg-[#295aec] top-0 flex items-center w-full p-3 px-6",
         scrolled && "border-b shadow-sm"
       )}
     >
@@ -56,8 +56,12 @@ const Navbar = () => {
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>
-              <SheetTitle></SheetTitle>
-              <SheetDescription></SheetDescription>
+              <SheetTitle>IETE</SheetTitle>
+              <SheetDescription>
+                <div className="">
+                  <Link href="/committee-members">Committee</Link>
+                </div>
+              </SheetDescription>
             </SheetHeader>
           </SheetContent>
         </Sheet>
